@@ -15,7 +15,7 @@ My team and me designed and build a low-cost underwater robot equipped with a ca
 ### [Intelligent Disinfection Robot](files/PUB/Dispensing_Robot__ICRA_2024.pdf)
 We propose a vision-based method for accurately detecting high-touch areas in the surroundings and combined RRT and APF and propose a dynamic pedestrian avoidance method, namely Socially Aware APF (SA-APF), which can predict the movement trend of pedestrians and plan the path in real-time.
 
-This work is accepted by *ICRA 2024*.
+This work is accepted by **ICRA 2024**.
 
 ### Motion Target Control and Automated Tracking System
 My team developed a motion tracking system utilizing STM32 development board and camera, incorporating basic image processing techniques for target detection.
@@ -24,7 +24,7 @@ This project won National First Prize of "TI Cup" China Undergraduate Electronic
 
 ## Work Experience
 ### [SJTU - Network and Infomation Management Organizaion](https://nimo.sjtu.edu.cn): Network administrator & Center group member
-I'm a network administrator in SJTU, affiliated with the Network and Information Management Center! I'm responsible for the maintenance of the campus network. Basicly our work is to check the abnormal network access point in campus, help users to configure the network, and maintain the network equipment like routers and switches.
+I'm a network administrator in SJTU, affiliated to the Network and Information Management Organization! I'm responsible for the maintenance of the campus network. Basicly our work is to check the abnormal network access point in campus, help users to configure the network, and maintain the network equipment like routers and switches.
 
 ## Skills
 - **Programming**: Python, C/C++, MATLAB
