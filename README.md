@@ -12,10 +12,10 @@ Contact me at:
 ### [FINS-ROV: a low-cost underwater robot from scratch](https://github.com/neo1zh/FINS-ROV)
 My team and me designed and build a low-cost underwater robot equipped with a camera and a manipulator with a light. I was responsible for the control system and the design of the ROV. I'm also working on a optimal algorithm for the optimal configuration of the light and the camera for a unknown underwater environment.
 
-### [Intelligent Disinfection Robot](files/PUB/_Dispensing_Robot__ICRA_2024.pdf)
+### [Intelligent Disinfection Robot](files/PUB/Dispensing_Robot__ICRA_2024.pdf)
 We propose a vision-based method for accurately detecting high-touch areas in the surroundings and combined RRT and APF and propose a dynamic pedestrian avoidance method, namely Socially Aware APF (SA-APF), which can predict the movement trend of pedestrians and plan the path in real-time.
 
-This work is accepted by [ICRA 2024].
+This work is accepted by *ICRA 2024*.
 
 ### Motion Target Control and Automated Tracking System
 My team developed a motion tracking system utilizing STM32 development board and camera, incorporating basic image processing techniques for target detection.
