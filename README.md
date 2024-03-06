@@ -9,7 +9,7 @@ Contact me at:
 - [GitHub](https://github.com/neo1zh)
 
 ## Research Experience
-### [FINS-ROV: a low-cost underwater robot from scratch](https://github.com/neo1zh)
+### [FINS-ROV: a low-cost underwater robot from scratch](https://github.com/neo1zh/FINS-ROV)
 My team and me designed and build a low-cost underwater robot equipped with a camera and a manipulator with a light. I was responsible for the control system and the design of the ROV. I'm also working on a optimal algorithm for the optimal configuration of the light and the camera for a unknown underwater environment.
 
 ### [Intelligent Disinfection Robot](files/PUB/_Dispensing_Robot__ICRA_2024.pdf)
