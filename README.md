@@ -1,4 +1,4 @@
-[Home](neo1zh.github.io) | [CV](files/CV/CV_Zihao_SJTU.pdf)
+[Home](neo1zh.github.io) | [CV](files/CV/CV.pdf)
 ## About Me
 I'm a third-year undergraduate student at Shanghai Jiao Tong University, majoring in Automation. I'm interested in **robotics**, **computer vision**, and **machine learning**. 
 
