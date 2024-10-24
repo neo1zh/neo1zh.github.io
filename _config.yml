@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Zihao (Neo) Zhao/Personal Homepage"
+title                    : "Zihao (Neo) Zhao's Personal Homepage"
 title_separator          : "-"
 name                     : &name "Zihao (Neo) Zhao"
 description              : &description "forth-year undergraduate student form Shanghai Jiao Tong University"
@@ -24,7 +24,7 @@ author:
   avatar           : "IMG_5366.JPG"
   name             : "Zihao (Neo) Zhao"
   pronouns         : "He"  
-  bio              : ""
+  bio              : "Rejoice always."
   location         : "IN, US"
   employer         : "Shanghao Jiao Tong University"
   uri              : # URL
@@ -36,7 +36,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0002-5733-3714"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
 
   # Repositories and software development
