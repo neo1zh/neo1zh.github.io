@@ -21,7 +21,7 @@ repository               : "neo1zh/neo1zh.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "IMG_5366.PNG"
+  avatar           : "IMG_5366.png"
   name             : "Zihao (Neo) Zhao"
   pronouns         : #"He"  
   bio              : "Rejoice always."
