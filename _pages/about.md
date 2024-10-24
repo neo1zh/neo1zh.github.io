@@ -15,3 +15,27 @@ Research Interest
 - Robotics
 - Vision-Language Model
 - AI for health
+
+Education
+=====
+- B.S. in Automation, Shanghai Jiao Tong University, Sept 2021 - June 2024 (expeced)
+  - cGPA: 3.82/4.3(89.4/100)
+- Research Assitant, University of Notre Dame, July 2024 - Aug 2024
+- Research Intern, University of North Carolina, Sept 2024 - Present
+
+Pubications
+=====
+- [Intelligent Disinfection Robot with High-Touch Surface Detection and Dynamic Pedestrian Avoidance](https://ieeexplore.ieee.org/document/10610836), ICAR 2024 (Accepeted)
+- Improving Alignment in LVLMs with Debiased Self-Judgment, NAACL 2025 (Submited)
+
+Project
+=====
+- Remote Opeartion Vechile
+  - Code: [GitHub](htts://github.com/neo1zh/FINS-ROV)
+  - Demo: [Bilibili](https://www.bilibili.com/video/BV1oC41177Rn/?spm_id_from=333.999.0.0)
+
+Wroks Experience
+=====
+- Senior Network Adiminstrator & Core Group Member, [NIMO](nimo.sjtu.edu.cn), Shanghai Jiao Tong University, 2021 Sept - 2023 Sept 
+  - Maintain the network of dormitory and teaching buildings in SJTU
+
