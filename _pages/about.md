@@ -9,7 +9,7 @@ redirect_from:
 
 I'm Zihao Zhao (赵梓豪), a fourth-year undergraduate student majoring in Automation([Zhiyuan Honor Program](https://en.zhiyuan.sjtu.edu.cn/en)) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn). I am now working remotely with Prof. [Huaxiu Yao](https://www.huaxiuyao.io) at UNC. Previously I was fortunately working with Prof. [Danny Chen](https://www3.nd.edu/~dchen/) at University of Notre Dame and Prof. [Jianping He](https://iwin-fins.com) at SJTU [IWIN-FINS lab](https://iwin-fins.com).
 
-You can find my CV here: [CV](https://github.com/neo1zh/neo1zh.github.io/blob/master/assets/ZhaoCV%20OCT.pdf).
+You can find my CV here: [CV](https://raw.githubusercontent.com/neo1zh/neo1zh.github.io/master/assets/ZhaoCV%20OCT.pdf).
 
 Research Interest
 =====
@@ -31,12 +31,12 @@ Pubications
 
 Project
 =====
-- Remote Opeartion Vechile
-  - Code: [GitHub](htts://github.com/neo1zh/FINS-ROV)
+- Remote Operation Vehicle
+  - Code: [GitHub](https://github.com/neo1zh/FINS-ROV)
   - Demo: [Bilibili](https://www.bilibili.com/video/BV1oC41177Rn/?spm_id_from=333.999.0.0)
 
-Wroks Experience
+Wrok Experience
 =====
-- Senior Network Adiminstrator & Core Group Member, [NIMO](nimo.sjtu.edu.cn), Shanghai Jiao Tong University, 2021 Sept - 2023 Sept 
+- Senior Network Administrator & Core Group Member, [NIMO](nimo.sjtu.edu.cn), Shanghai Jiao Tong University, 2021 Sept - 2023 Sept 
   - Maintain the network of dormitory and teaching buildings in SJTU
 
