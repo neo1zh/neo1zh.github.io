@@ -21,7 +21,7 @@ Education
 =====
 - B.S. in Automation, Shanghai Jiao Tong University, Sept 2021 - June 2024 (expeced)
   - cGPA: 3.82/4.3(89.4/100)
-- Research Assitant, University of Notre Dame, July 2024 - Aug 2024
+- Research Assistant, University of Notre Dame, July 2024 - Aug 2024
 - Research Intern, University of North Carolina, Sept 2024 - Present
 
 Pubications
