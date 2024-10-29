@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Zihao Zhao (赵梓豪), a fourth-year undergraduate student majoring in Automation([Zhiyuan Honor Program](https://en.zhiyuan.sjtu.edu.cn/en)) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn). I am now working remotely with Prof. [Huaxiu Yao](https://www.huaxiuyao.io) at UNC. Previously I was fortunately working with Prof. [Danny Chen](https://www3.nd.edu/~dchen/) at University of Notre Dame and Prof. [Jianping He](https://iwin-fins.com) at SJTU [IWIN-FINS lab](https://iwin-fins.com).
+I'm Zihao Zhao (赵梓豪), a fourth-year undergraduate student majoring in Automation ([Zhiyuan Honor Program](https://en.zhiyuan.sjtu.edu.cn/en)) at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn). I am now working remotely with Prof. [Huaxiu Yao](https://www.huaxiuyao.io) at UNC. Previously I was fortunately working with Prof. [Danny Chen](https://www3.nd.edu/~dchen/) at University of Notre Dame and Prof. [Jianping He](https://iwin-fins.com) at SJTU [IWIN-FINS lab](https://iwin-fins.com).
 
 You can find my CV here: [CV](https://raw.githubusercontent.com/neo1zh/neo1zh.github.io/master/assets/ZhaoCV-OCT-27.pdf).
 
