@@ -26,7 +26,7 @@ Education
 
 Pubications
 =====
-- [Intelligent Disinfection Robot with High-Touch Surface Detection and Dynamic Pedestrian Avoidance](https://ieeexplore.ieee.org/document/10610836), ICAR 2024 (Accepted)
+- [Intelligent Disinfection Robot with High-Touch Surface Detection and Dynamic Pedestrian Avoidance](https://ieeexplore.ieee.org/document/10610836), ICRA 2024 (Accepted)
 - Improving Alignment in LVLMs with Debiased Self-Judgment, NAACL 2025 (Submmited)
 
 Project
