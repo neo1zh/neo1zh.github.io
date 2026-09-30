@@ -2,7 +2,7 @@
 """Build the static homepage and standalone LaTeX CV. Python standard library only."""
 import html
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 data = json.loads((ROOT / '_data/research.json').read_text())
@@ -16,30 +16,19 @@ esc = html.escape
 def authors(p):
     return esc(p['authors']).replace('Zihao Zhao', '<strong>Zihao Zhao</strong>')
 
-def meta(p):
-    venue = f'<span class="venue">{esc(p["venue"])} · {p["year"]}</span>'
-    status = '<span class="status">Accepted</span>' if p['status'] == 'accepted' else ''
-    link = f'<a href="{esc(p["url"])}" aria-label="Read {esc(p["title"])}">Paper ↗</a>' if p.get('url') else ''
-    return f'<div class="paper-meta">{venue}{status}{link}</div>'
-
 def title(p):
     text = esc(p['title'])
     return f'<a href="{esc(p["url"])}">{text}</a>' if p.get('url') else text
 
-def selected(p, index):
-    equal = '<span class="equal">† Equal contribution</span>' if p.get('equal') else ''
-    return f'''<article class="selected-paper" aria-labelledby="selected-{p['id']}">
-      <div class="selected-label"><span class="selected-index">{index:02d}</span><span class="selected-topic">{esc(p['topic'])}</span></div>
-      <div><h3 class="question" id="selected-{p['id']}">{esc(p['question'])}</h3><p class="paper-title">{title(p)}</p><p class="authors">{authors(p)}</p>{equal}{meta(p)}</div>
-    </article>'''
-
 def publication(p):
-    category = 'mas' if p.get('selected') else 'other'
-    return f'''<li class="publication-entry" data-category="{category}" id="paper-{p['id']}"><span class="publication-year">{p['year']}</span><div><h4 class="paper-title">{title(p)}</h4><p class="authors">{authors(p)}</p>{meta(p)}</div></li>'''
+    status = ' · Accepted' if p['status'] == 'accepted' else ''
+    link = f'<a class="paper-link" href="{esc(p["url"])}" aria-label="Read {esc(p["title"])}">Paper <span aria-hidden="true">↗</span></a>' if p.get('url') else ''
+    return f'''<li class="publication-entry" id="paper-{p['id']}"><div class="publication-label"><span class="venue-badge">{esc(p['venue'])}</span><span class="publication-year">{p['year']}</span></div><div><h3 class="paper-title">{title(p)}</h3><p class="authors">{authors(p)}</p><p class="publication-citation"><em>{esc(p['venue'])} {p['year']}</em>{status}</p><div class="paper-actions">{link}</div></div></li>'''
 
 portrait_path = data.get('portrait')
 if portrait_path:
-    assert portrait_path.startswith('/images/') and (ROOT / portrait_path.lstrip('/')).is_file(), 'Portrait must exist in /images/'
+    path = PurePosixPath(portrait_path)
+    assert path.is_absolute() and '..' not in path.parts and path.parts[1] in ('images', 'assets') and (ROOT / portrait_path.lstrip('/')).is_file(), 'Portrait must exist in /images/ or /assets/'
     portrait = f'<img class="portrait-image" src="{esc(portrait_path)}" width="440" height="550" alt="Zihao Zhao" fetchpriority="high">'
 else:
     portrait = '<div class="portrait-placeholder" role="img" aria-label="Portrait placeholder for Zihao Zhao"><span aria-hidden="true">Zz.</span><small>Photo pending</small></div>'
@@ -49,9 +38,7 @@ manuscripts = [p for p in papers if p['status'] == 'under-review']
 page = (ROOT / 'templates/editorial.html').read_text()
 for key, value in {
     'PORTRAIT': portrait,
-    'SELECTED': '\n'.join(selected(p, i) for i, p in enumerate((p for p in papers if p.get('selected')), 1)),
-    'PUBLICATIONS': '\n'.join(publication(p) for p in accepted),
-    'MANUSCRIPTS': '\n'.join(publication(p) for p in manuscripts),
+    'PUBLICATIONS': '\n'.join(publication(p) for p in papers if p.get('selected')),
 }.items():
     page = page.replace(f'@@{key}@@', value)
 assert '@@' not in page

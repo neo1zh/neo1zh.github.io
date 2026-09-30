@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-30",
-  "portrait": null,
+  "portrait": "/assets/Pamplona.jpeg",
   "publications": [
     {"id":"debate","title":"When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning","authors":"Zihao Zhao, Tunyu Zhang, Haizhou Shi, Yusong Zhao, Xinxi Zhang, and Hao Wang","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Reasoning","question":"When does discussion between agents improve reasoning?","url":"https://openreview.net/forum?id=B2PDGRTWWu","selected":true},
     {"id":"orchestration","title":"Reward Modeling for Multi-Agent Orchestration","authors":"King Yeung Tsang†, Zihao Zhao†, et al.","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Orchestration","question":"How can we learn to coordinate multiple agents?","url":"https://openreview.net/forum?id=9HnmEMnWjg","equal":true,"selected":true},

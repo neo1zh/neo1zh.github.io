@@ -5,7 +5,7 @@ The new homepage is a static site with no runtime or package dependencies. `.noj
 ## Edit and build
 
 - `templates/editorial.html`: homepage biography, background, and layout.
-- `_data/research.json`: publication data shared by the homepage and LaTeX CV.
+- `_data/research.json`: publication data shared by the homepage and LaTeX CV. Papers with `selected: true` appear on the homepage; all papers appear in the CV.
 - `assets/editorial/style.css`: responsive light/dark design.
 - `templates/cv.tex`: CV sections and formatting.
 - `assets/Zihao-Zhao-CV.tex`: generated, standalone source that can be uploaded to Overleaf and compiled with pdfLaTeX.
@@ -23,15 +23,15 @@ python3 scripts/check.py
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open `http://127.0.0.1:8000`. All content is readable without JavaScript. JavaScript enhances publication filtering and remembers a light/dark preference locally.
+Open `http://127.0.0.1:8000`. All content is readable without JavaScript. JavaScript remembers a light/dark preference locally.
 
-## Add the new portrait
+## Portrait
 
-Save the approved photo to `images/portrait.jpg`, set `portrait` to `/images/portrait.jpg` in `_data/research.json`, and rebuild. A 4:5 head-and-shoulders crop at roughly 880 × 1100 pixels works well. The current monogram is explicitly a placeholder.
+The homepage uses the supplied `assets/Pamplona.jpeg`. To replace it, save the photo in `images/` or `assets/`, update `portrait` in `_data/research.json`, and rebuild. The original photo is displayed through a responsive 4:5 frame without altering the image file.
 
 ## Content provenance and remaining editorial choices
 
-Publication statuses, dates, affiliations, awards, and experience come from the supplied CV. The three research questions are editorial framing based on paper titles, not claims about measured results. Author truncation matches the supplied CV; expand lists when complete citation data is available. The Rutgers entry says “doctoral studies”; no degree completion or transfer reason is inferred.
+Publication statuses, dates, affiliations, awards, and experience come from the supplied CV. The homepage shows the three selected MAS papers in a compact, al-folio-inspired publication list. Author truncation matches the supplied CV; expand lists when complete citation data is available. The Rutgers entry says “doctoral studies”; no degree completion or transfer reason is inferred.
 
 The previous homepage's research internships are not carried forward as current positions because the supplied CV does not provide updated dates or descriptions. Add specific research contributions and code links when available. No fabricated metrics, skills, internship availability, or paper abstracts have been added.
 

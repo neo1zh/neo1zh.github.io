@@ -12,16 +12,3 @@ themeButton.addEventListener('click', () => {
   try { localStorage.setItem('zihao-theme', theme); } catch (_) {}
   updateThemeButton();
 });
-const tools = document.querySelector('.publication-tools');
-const entries = [...document.querySelectorAll('.publication-entry')];
-const filters = [...document.querySelectorAll('[data-filter]')];
-function filterPublications(value) {
-  let visible = 0;
-  entries.forEach(entry => { entry.hidden = value !== 'all' && entry.dataset.category !== value; if (!entry.hidden) visible++; });
-  document.querySelectorAll('.publication-group').forEach(group => { group.hidden = ![...group.querySelectorAll('.publication-entry')].some(entry => !entry.hidden); });
-  filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === value)));
-  document.querySelector('.result-count').textContent = `${visible} ${visible === 1 ? 'paper' : 'papers'}`;
-}
-tools.hidden = false;
-filters.forEach(button => button.addEventListener('click', () => filterPublications(button.dataset.filter)));
-filterPublications('all');

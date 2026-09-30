@@ -27,7 +27,7 @@ source = (ROOT / 'index.html').read_text()
 page.feed(source)
 assert not [key for key, count in Counter(page.ids).items() if count > 1], 'Duplicate HTML IDs'
 data = json.loads((ROOT / '_data/research.json').read_text())
-assert set(page.papers) == {f'paper-{p["id"]}' for p in data['publications']}
+assert set(page.papers) == {f'paper-{p["id"]}' for p in data['publications'] if p.get('selected')}
 for link in page.links:
     url = urlsplit(link)
     if url.scheme or url.netloc:
