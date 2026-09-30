@@ -1,0 +1,15 @@
+{
+  "updated": "2026-09-30",
+  "portrait": null,
+  "publications": [
+    {"id":"debate","title":"When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning","authors":"Zihao Zhao, Tunyu Zhang, Haizhou Shi, Yusong Zhao, Xinxi Zhang, and Hao Wang","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Reasoning","question":"When does discussion between agents improve reasoning?","url":"https://openreview.net/forum?id=B2PDGRTWWu","selected":true},
+    {"id":"orchestration","title":"Reward Modeling for Multi-Agent Orchestration","authors":"King Yeung Tsang†, Zihao Zhao†, et al.","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Orchestration","question":"How can we learn to coordinate multiple agents?","url":"https://openreview.net/forum?id=9HnmEMnWjg","equal":true,"selected":true},
+    {"id":"uncertainty","title":"Sequential Probabilistic Uncertainty Estimation for Parallel Multi-Agent Reasoning Systems","authors":"Tunyu Zhang, Zihao Zhao, et al.","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Uncertainty","question":"How can we assess uncertainty in parallel agent reasoning?","url":"https://openreview.net/forum?id=NRg4W8EzfT","selected":true},
+    {"id":"residual","title":"Probabilistic Residual Learning for Online Recommendations","authors":"Wenyuan Wang, Yusong Zhao, …, Zihao Zhao, …, Hao Wang","venue":"RecSys","year":2026,"status":"accepted","url":"https://arxiv.org/abs/2607.20863"},
+    {"id":"glimpse","title":"GLIMPSE: Do Large Vision-Language Models Truly Think With Videos or Just Glimpse at Them?","authors":"Yiyang Zhou, Linjie Li, …, Zihao Zhao, …, Huaxiu Yao","venue":"EMNLP","year":2025,"status":"published","details":"pp. 27842–27856","url":"https://aclanthology.org/2025.emnlp-main.1415.pdf"},
+    {"id":"alignment","title":"Improving Alignment in LVLMs with Debiased Self-Judgment","authors":"Sihan Yang, Chenhang Cui, Zihao Zhao, et al.","venue":"Findings of EMNLP","year":2025,"status":"published","url":"https://arxiv.org/abs/2508.20655"},
+    {"id":"unicon","title":"Universal Conditional Networks (UniCoN) for Multi-Age Embryonic Cartilage Segmentation with Sparsely Annotated Data","authors":"Nishchal Sapkota, Yejia Zhang, Zihao Zhao, et al.","venue":"Scientific Reports","year":2025,"status":"published","details":"vol. 15, article 3893","url":"https://doi.org/10.1038/s41598-025-87797-9"},
+    {"id":"robot","title":"Intelligent Disinfection Robot with High-Touch Surface Detection and Dynamic Pedestrian Avoidance","authors":"Yunfei Luan, Muhang He, …, Zihao Zhao, et al.","venue":"ICRA","year":2024,"status":"published","details":"pp. 3595–3601","url":"https://doi.org/10.1109/ICRA57147.2024.10610836"},
+    {"id":"saepo","title":"SAEPO: Sparse-Autoencoder-Guided Token-Level Credit Assignment for Policy Optimization","authors":"Yusong Zhao, Zihao Zhao, et al.","year":2026,"status":"under-review","venue":"Manuscript under review"}
+  ]
+}

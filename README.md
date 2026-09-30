@@ -1,75 +1,40 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Zihao Zhao — editorial research site
 
-# Getting Started
+The new homepage is a static site with no runtime or package dependencies. `.nojekyll` makes GitHub Pages serve it directly. The inherited AcademicPages source and older assets are preserved; they are no longer used to render the homepage. `/about/`, `/publications/`, `/cv/`, and `/resume/` redirect to their current destinations.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## Edit and build
 
-See more info at https://academicpages.github.io/
+- `templates/editorial.html`: homepage biography, background, and layout.
+- `_data/research.json`: publication data shared by the homepage and LaTeX CV.
+- `assets/editorial/style.css`: responsive light/dark design.
+- `templates/cv.tex`: CV sections and formatting.
+- `assets/Zihao-Zhao-CV.tex`: generated, standalone source that can be uploaded to Overleaf and compiled with pdfLaTeX.
+- `assets/Zihao-Zhao-CV.pdf`: downloadable CV, compiled from that exact source.
 
-## Running locally
+Run from the repository root:
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
-```bash
-docker build -t jekyll-site .
+```sh
+python3 scripts/build.py
+mkdir -p tmp/latex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=tmp/latex assets/Zihao-Zhao-CV.tex
+pdflatex -interaction=nonstopmode -halt-on-error -output-directory=tmp/latex assets/Zihao-Zhao-CV.tex
+cp tmp/latex/Zihao-Zhao-CV.pdf assets/Zihao-Zhao-CV.pdf
+python3 scripts/check.py
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
-```
+Open `http://127.0.0.1:8000`. All content is readable without JavaScript. JavaScript enhances publication filtering and remembers a light/dark preference locally.
 
-# Maintenance
+## Add the new portrait
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Save the approved photo to `images/portrait.jpg`, set `portrait` to `/images/portrait.jpg` in `_data/research.json`, and rebuild. A 4:5 head-and-shoulders crop at roughly 880 × 1100 pixels works well. The current monogram is explicitly a placeholder.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## Content provenance and remaining editorial choices
 
-## Bugfixes and enhancements
+Publication statuses, dates, affiliations, awards, and experience come from the supplied CV. The three research questions are editorial framing based on paper titles, not claims about measured results. Author truncation matches the supplied CV; expand lists when complete citation data is available. The Rutgers entry says “doctoral studies”; no degree completion or transfer reason is inferred.
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+The previous homepage's research internships are not carried forward as current positions because the supplied CV does not provide updated dates or descriptions. Add specific research contributions and code links when available. No fabricated metrics, skills, internship availability, or paper abstracts have been added.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Publish
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+This local branch does not change the live website. After review, merge the generated files, PDF, and `.nojekyll` into the branch configured in GitHub Pages (the existing repository uses `master`). If the Pages source is “Deploy from a branch,” keep its root directory. If an external workflow overrides the Pages source, point it to these static files. No secrets or environment variables are needed.

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /templates/
+Disallow: /scripts/
+Disallow: /_pages/
+Disallow: /_posts/
+Disallow: /_publications/
+Sitemap: https://neo1zh.github.io/sitemap.xml
