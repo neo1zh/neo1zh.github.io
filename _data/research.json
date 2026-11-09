@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-11-05",
   "portrait": "/assets/Pamplona.jpeg",
   "publications": [
     {"id":"debate","title":"When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning","authors":"Zihao Zhao, Tunyu Zhang, Haizhou Shi, Yusong Zhao, Xinxi Zhang, and Hao Wang","venue":"NeurIPS","year":2026,"status":"accepted","topic":"Reasoning","question":"When does discussion between agents improve reasoning?","url":"https://arxiv.org/abs/2610.04686v1","selected":true,"figure":{"src":"/assets/figures/debate-fig1.webp","thumb":"/assets/figures/debate-fig1-thumb.webp","width":1800,"height":1048,"alt":"Two-row diagram. Top: overlapping sampled agents cover the same questions, so majority vote settles on a repeated wrong answer. Bottom: diverse agents cover complementary questions, and after rounds of Latent Verification Debate the readout recovers the correct minority answer.","caption":"The supply–readout view: diverse agents supply complementary proposals, and verification-aware readout (LVD) recovers a correct minority answer that majority voting misses."}},
